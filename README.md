@@ -1,2 +1,2 @@
 # birthdaylist
-Birthdaylist with immutable list in model
+Birthdaylist with JavaFX-GUI
