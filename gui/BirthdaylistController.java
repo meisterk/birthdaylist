@@ -119,7 +119,10 @@ public class BirthdaylistController implements Initializable {
         olist.clear();
         List<Person> list = model.getPersonList();
         for (Person p : list) {
-            olist.add(p.getName() + " " + p.getBirthday().format(DateTimeFormatter.ISO_DATE));
+            String text =p.getName() + " " +
+                    p.getBirthday().getDayOfMonth() + "." +
+                    p.getBirthday().getMonthValue() + ".";
+            olist.add(text);
         }
     }
 
